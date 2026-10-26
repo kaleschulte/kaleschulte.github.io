@@ -1,25 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kale Schulte | Executive Operations & AI</title>
-  <style>
-    body {
-      background: #14212d;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    h1 { font-size: 50px; }
-    p { color: #b6c4d1; font-size: 20px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kale Schulte — engineering, operations, robotics, innovation and AI transformation.">
+<title>Kale Schulte | Engineering, Operations & AI</title>
+<style>
+:root {
+  --bg:#101a25;
+  --panel:#1b2a39;
+  --text:#f4f7fa;
+  --muted:#aec0d0;
+  --accent:#d9a66e;
+  --line:#344655;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg); color:var(--text);
+  line-height:1.75;
+}
+a { color:var(--accent); }
+header {
+  display:flex; justify-content:space-between;
+  align-items:center; flex-wrap:wrap; gap:15px;
+  padding:18px 7%; border-bottom:1px solid var(--line);
+}
+.logo { font-weight:bold; letter-spacing:2px; }
+nav { display:flex; flex-wrap:wrap; gap:20px; }
+nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+nav a:hover { color:white; }
+.hero {
+  padding:125px 7% 115px;
+  background:linear-gradient(135deg,#182e40,#101a25 70%);
+}
+.eyebrow {
+  color:var(--accent); text-transform:uppercase;
+  letter-spacing:3px; font-size:13px; font-weight:bold;
+}
+h1 {
+  font-size:clamp(42px,7vw,86px);
+  line-height:1.08; max-width:1000px; margin:25px 0;
+  letter-spacing:-2px;
+}
+h2 { font-size:clamp(28px,4vw,44px); line-height:1.2; }
+h3 { margin-bottom:8px; }
+.lead {
+  max-width:750px; font-size:21px;
+  color:var(--muted); line-height:1.65;
+}
+.button {
+  display:inline-block; margin:24px 12px 0 0;
+  padding:13px 24px; border:1px solid var(--accent);
+  text-decoration:none; color:var(--bg);
+  background:var(--accent); font-weight:bold;
+  border-radius:5px;
+}
+.button.secondary { background:transparent; color:var(--accent); }
+section { padding:90px 7%; }
+.wrap { max-width:1150px; margin:auto; }
+.alt { background:#152331; }
+.quote {
+  border-left:4px solid var(--accent);
+  padding:15px 0 15px 30px;
+  font-size:clamp(23px,3vw,34px); line-height:1.4;
+  max-width:930px;
+}
+p { color:var(--muted); }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px; margin-top:35px;
+}
+.card {
+  background:var(--panel); padding:28px;
+  border:1px solid var(--line); border-radius:8px;
+}
+.card h3 { color:white; }
+.number { color:var(--accent); font-size:13px; letter-spacing:2px; }
+.timeline { display:grid; gap:20px; margin-top:30px; }
+.timeline article {
+  padding:20px 25px; border-left:3px solid var(--accent);
+  background:var(--panel);
+}
+.timeline h3 { margin-top:5px; }
+footer {
+  padding:40px 7%; border-top:1px solid var(--line);
+  text-align:center;
+}
+@media(max-width:800px) {
+  .grid { grid-template-columns:1fr; }
+  .hero { padding:80px 7%; }
+  section { padding:65px 7%; }
+  nav { gap:12px; }
+}
+</style>
 </head>
 <body>
-  <h1>Kale Schulte</h1>
-  <h2>Engineer. Operator. Innovator.</h2>
-  <p>Built to solve what others can't categorize.</p>
-  <p>Operations | Engineering | Robotics | AI</p>
+
+<header>
+  <div class="logo">KALE SCHULTE</div>
+  <nav aria-label="Main navigation">
+    <a href="#about">My Story</a>
+    <a href="#expertise">Capabilities</a>
+    <a href="#career">Experience</a>
+    <a href="#inventions">Inventions</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Engineering · Operations · AI</div>
+    <h1>Built to solve what others can't categorize.</h1>
+    <p class="lead">
+      Engineer by training. Operator by experience.
+      Innovator by instinct.
+    </p>
+    <p class="lead">
+      I connect technology, people, processes and business
+      strategy to solve challenging operational problems.
+    </p>
+    <a class="button" href="#about">Discover My Story</a>
+    <a class="button secondary" href="#expertise">Explore My Work</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">The Swiss Army Knife</div>
+    <h2>A career that refuses to fit in a box.</h2>
+    <div class="quote">
+      "In the span of three weeks, two CEOs independently
+      described me as a Swiss Army knife."
+    </div>
+    <p>
+      I think I understand why.
+    </p>
+    <p>
+      I've developed patented automotive technologies,
+      worked on robotic automation solutions, helped
+      businesses improve supply chains, developed consumer
+      products, led industrial operations, and built
+      AI-enabled systems.
+    </p>
+    <p>
+      These aren't disconnected disciplines. They're
+      different ways of solving problems.
+    </p>
+    <p>
+      I believe the most interesting business challenges
+      rarely respect organizational boundaries.
+      Neither should the people solving them.
+    </p>
+  </div>
+</section>
+
+<section id="expertise" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Core Capabilities</div>
+    <h2>Different disciplines. One integrated approach.</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="number">01</div>
+        <h3>Executive Operations</h3>
+        <p>Operational leadership, organizational alignment,
+        manufacturing, cost control and execution.</p>
+      </div>
+      <div class="card">
+        <div class="number">02</div>
+        <h3>AI Transformation</h3>
+        <p>AI agents, intelligent workflows, automation,
+        dashboards and business process modernization.</p>
+      </div>
+      <div class="card">
+        <div class="number">03</div>
+        <h3>Engineering & Innovation</h3>
+        <p>Product engineering, technical problem-solving,
+        manufacturing systems and patented inventions.</p>
+      </div>
+      <div class="card">
+        <div class="number">04</div>
+        <h3>Robotics & Automation</h3>
+        <p>Warehouse automation, distribution systems,
+        systems integration and solutions architecture.</p>
+      </div>
+      <div class="card">
+        <div class="number">05</div>
+        <h3>Business Systems</h3>
+        <p>Enterprise workflows, reporting, procurement,
+        data analytics and continuous improvement.</p>
+      </div>
+      <div class="card">
+        <div class="number">06</div>
+        <h3>Entrepreneurship</h3>
+        <p>Product development, commercialization,
+        business building and cross-functional strategy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="career">
+  <div class="wrap">
+    <div class="eyebrow">Professional Journey</div>
+    <h2>From invention to enterprise leadership.</h2>
+    <div class="timeline">
+      <article>
+        <div class="number">INDUSTRIAL OPERATIONS</div>
+        <h3>Visionary Fiber Technologies</h3>
+        <p>Operations leadership, manufacturing systems,
+        process improvement, governance and AI workflows.</p>
+      </article>
+      <article>
+        <div class="number">ROBOTICS & SUPPLY CHAIN</div>
+        <h3>Amazon / Kiva Systems & Bastian Solutions</h3>
+        <p>Solutions architecture, material-handling
+        automation and complex distribution systems.</p>
+      </article>
+      <article>
+        <div class="number">CONSULTING & ANALYTICS</div>
+        <h3>Commonwealth & Business Systems</h3>
+        <p>Supply-chain consulting, facility optimization,
+        analytics and enterprise technology.</p>
+      </article>
+      <article>
+        <div class="number">ENGINEERING</div>
+        <h3>Automotive Product Development</h3>
+        <p>Mechanical and manufacturing engineering,
+        including work documented in U.S. patents.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="inventions" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Beyond the Job Description</div>
+    <h2>Inventions, ventures and curiosity.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Patented Engineering</h3>
+        <p>Automotive component innovations and
+        engineering patent filings.</p>
+        <a href="https://patents.justia.com/inventor/kale-schulte"
+           target="_blank" rel="noopener noreferrer">
+           Explore patents ↗
+        </a>
+      </div>
+      <div class="card">
+        <h3>Stasis Cosmetics</h3>
+        <p>Entrepreneurial product development spanning
+        personal care, formulation and commercialization.</p>
+        <a href="https://wellnessmama.com/podcast/527/"
+           target="_blank" rel="noopener noreferrer">
+           Listen to my interview ↗
+        </a>
+      </div>
+      <div class="card">
+        <h3>Continuous Exploration</h3>
+        <p>An ongoing interest in the intersection of
+        emerging technologies, engineering and practical
+        business innovation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="connect">
+  <div class="wrap">
+    <div class="eyebrow">What's Next?</div>
+    <h2>Have a complicated problem?</h2>
+    <p class="lead">
+      I'm interested in conversations about executive
+      operations, AI transformation, engineering leadership,
+      business systems and ambitious cross-functional work.
+    </p>
+    <a class="button"
+       href="https://www.linkedin.com/in/kaleschulte/"
+       target="_blank" rel="noopener noreferrer">
+       Connect on LinkedIn
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">KALE SCHULTE</div>
+  <p>Engineering · Operations · Innovation · AI</p>
+  <p>© 2026 Kale Schulte. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+  
