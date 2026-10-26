@@ -43,9 +43,9 @@
     .btn-primary:hover{background:#f2d3a8;color:#101a24}
     .btn-outline{border:1px solid #758898;color:white}
     .btn-outline:hover{background:#263a4a;color:white}
-    .photo-wrap{position:relative;max-width:445px;margin-left:auto}
+    .photo-wrap{position:relative;width:100%;max-width:420px;margin-left:auto}
     .photo-wrap::before{content:"";position:absolute;left:-18px;bottom:-18px;right:18px;top:18px;border:1px solid #9b7854;z-index:0}
-    .portrait{position:relative;width:100%;aspect-ratio:4/4.8;object-fit:cover;object-position:center 27%;border:1px solid #506376;filter:saturate(.88)}
+    .portrait{position:relative;width:100%;height:390px;object-fit:cover;object-position:center 34%;border:1px solid #506376;filter:saturate(.88);border-radius:8px}
     .photo-caption{position:relative;text-align:right;color:#d6bd9d;font-size:.8rem;letter-spacing:.08em;padding-top:15px}
     section{padding:95px 0}
     section.alt{background:var(--bg2)}
@@ -87,7 +87,7 @@
     .foot a{color:#d3e1e9}
     :focus-visible{outline:2px solid var(--gold);outline-offset:4px}
     @media(max-width:900px){.hero-grid{gap:35px;grid-template-columns:1.2fr .9fr}.nav{align-items:flex-start;flex-direction:column;padding:17px 0}nav{gap:14px}.grid,.resources{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:650px){.container{width:min(100% - 36px,var(--max))}.hero{padding:48px 0 72px}.hero-grid,.two-col,.cases{grid-template-columns:1fr}.hero-grid{gap:35px}.photo-wrap{margin:0 auto;max-width:350px}.grid,.resources{grid-template-columns:1fr}.career-row{grid-template-columns:1fr;gap:6px}section{padding:69px 0}.nav-contact{padding:0;border:0}.quote-note{margin-left:0}.stats{gap:25px}h1{font-size:clamp(2.8rem,12vw,4.1rem)}}
+    @media(max-width:650px){.container{width:min(100% - 36px,var(--max))}.hero{padding:48px 0 72px}.hero-grid,.two-col,.cases{grid-template-columns:1fr}.hero-grid{gap:35px}.photo-wrap{margin:0 auto;max-width:350px}.portrait{height:340px}.grid,.resources{grid-template-columns:1fr}.career-row{grid-template-columns:1fr;gap:6px}section{padding:69px 0}.nav-contact{padding:0;border:0}.quote-note{margin-left:0}.stats{gap:25px}h1{font-size:clamp(2.8rem,12vw,4.1rem)}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
   </style>
 </head>
@@ -112,7 +112,7 @@
 </div></section>
 <section id="story"><div class="container two-col">
   <div><div class="eyebrow">The Through Line</div><h2>A career that refuses to fit in a box.</h2><p>I've worked across product engineering, robotics, enterprise technology, supply chain, entrepreneurship, manufacturing operations, and AI systems. The industries may change, but my approach stays the same: find the real constraint, build the right system, and make it work.</p><p>I am most useful where technical decisions, organizational execution, and commercial results intersect.</p></div>
-  <div><div class="quote">“In the span of three weeks, two CEOs independently described me as a Swiss Army knife.”</div><div class="quote-note">A description of conversations that helped me recognize the common thread in my work.</div><p style="margin-top:26px">To me, versatility isn't about doing everything. It's about connecting the expertise needed to solve a problem that doesn't belong to one department.</p></div>
+  <div><div class="quote">Complex challenges rarely fit neatly within a single discipline.</div><p style="margin-top:26px">I've developed patented technologies, designed automation solutions, helped build businesses, and led operational transformation. Each experience has strengthened my ability to see how engineering, people, systems, and commercial priorities fit together.</p><p>My approach is straightforward: understand the problem, identify the constraints, bring the right capabilities together, and deliver a solution that works in practice.</p></div>
 </div></section>
 <section class="alt" id="impact"><div class="container">
   <div class="eyebrow">Selected Results</div><h2>Results over job titles.</h2><p class="section-intro">A few measurable examples from my career, spanning automation, operational execution, and business building.</p>
