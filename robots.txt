@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kaleschulte.com/sitemap.xml

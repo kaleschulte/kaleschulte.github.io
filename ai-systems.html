@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1520"><meta name="description" content="Building practical AI-enabled workflows that connect people, reporting and execution rather than treating AI as a standalone experiment."><meta property="og:type" content="website"><meta property="og:title" content="AI and Business Systems | Kale Schulte"><meta property="og:description" content="Building practical AI-enabled workflows that connect people, reporting and execution rather than treating AI as a standalone experiment."><meta property="og:url" content="https://kaleschulte.com/ai-systems.html"><meta property="og:image" content="https://kaleschulte.com/kale-portrait.jpg"><link rel="canonical" href="https://kaleschulte.com/ai-systems.html"><title>AI and Business Systems | Kale Schulte</title><style>
+    :root{--bg:#0b1520;--bg2:#111f2c;--surface:#182837;--text:#f4f3ee;--muted:#acbec9;--gold:#e5b87b;--line:#314554;--max:1170px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:100px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+    a{color:inherit;text-underline-offset:4px}
+    a:hover{color:var(--gold)}
+    img{display:block;max-width:100%}
+    .container{width:min(var(--max),calc(100% - 52px));margin-inline:auto}
+    .eyebrow{font-size:.76rem;font-weight:760;letter-spacing:.19em;text-transform:uppercase;color:var(--gold)}
+    .skip{position:absolute;top:-100px;left:20px;padding:10px;background:white;color:#111;z-index:50}
+    .skip:focus{top:20px}
+    .nav-wrap{position:sticky;top:0;background:rgba(11,21,32,.95);border-bottom:1px solid #253746;z-index:10;backdrop-filter:blur(12px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;min-height:75px;gap:20px}
+    .brand{text-decoration:none;font-weight:810;letter-spacing:.13em;white-space:nowrap;font-size:.92rem}
+    nav{display:flex;gap:23px;align-items:center;flex-wrap:wrap}
+    nav a{text-decoration:none;color:#c7d0d7;font-size:.85rem;font-weight:600}
+    .nav-contact{border:1px solid #637788;padding:9px 15px;border-radius:4px;color:#fff}
+    .hero{background:radial-gradient(ellipse at 80% 35%,#21384a 0%,#101e2b 44%,#0b1520 78%);padding:76px 0 88px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(290px,.82fr);gap:72px;align-items:center}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.05rem,5.3vw,5.15rem);line-height:1.07;letter-spacing:-.035em;font-weight:500;margin:21px 0 24px}
+    h1 em{font-style:normal;color:var(--gold)}
+    .hero-sub{font-size:1.25rem;color:#e1e9ee;line-height:1.55;margin-bottom:10px;font-weight:570}
+    .hero-desc{font-size:1.05rem;color:var(--muted);max-width:640px;margin:0 0 25px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;min-height:49px;text-decoration:none;border-radius:4px;font-size:.9rem;font-weight:760;transition:transform .15s,background-color .15s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--gold);color:#101a24}
+    .btn-primary:hover{background:#f2d3a8;color:#101a24}
+    .btn-outline{border:1px solid #758898;color:white}
+    .btn-outline:hover{background:#263a4a;color:white}
+    .photo-wrap{position:relative;width:100%;max-width:420px;margin-left:auto}
+    .photo-wrap::before{content:"";position:absolute;left:-18px;bottom:-18px;right:18px;top:18px;border:1px solid #9b7854;z-index:0}
+    .portrait{position:relative;width:100%;height:390px;object-fit:cover;object-position:center 34%;border:1px solid #506376;filter:saturate(.88);border-radius:8px}
+    .photo-caption{position:relative;text-align:right;color:#d6bd9d;font-size:.8rem;letter-spacing:.08em;padding-top:15px}
+    section{padding:95px 0}
+    section.alt{background:var(--bg2)}
+    h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(2.2rem,3.7vw,3.35rem);line-height:1.18;letter-spacing:-.02em;margin:13px 0 22px}
+    h3{font-size:1.18rem;line-height:1.35;margin:0 0 10px}
+    p{color:var(--muted)}
+    .section-intro{max-width:740px;font-size:1.07rem}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+    .quote{border-left:3px solid var(--gold);padding:12px 0 12px 25px;font-size:clamp(1.33rem,2.35vw,1.88rem);font-family:Georgia,serif;line-height:1.38;color:#f3eee7}
+    .quote-note{color:var(--muted);font-size:.84rem;margin:15px 0 0 29px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
+    .stat{border-top:2px solid #b78b5d;padding-top:19px}
+    .stat strong{display:block;color:#f3dfc6;font-size:clamp(1.85rem,3.2vw,2.75rem);line-height:1.2;letter-spacing:-.04em}
+    .stat span{display:block;color:var(--muted);font-size:.89rem;line-height:1.45;margin-top:7px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:31px}
+    .card{background:var(--surface);border:1px solid var(--line);padding:29px 27px;min-height:208px}
+    .card-id{font-size:.79rem;letter-spacing:.14em;color:var(--gold);font-weight:bold;margin-bottom:20px}
+    .card p{font-size:.94rem;margin-bottom:0}
+    .cases{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}
+    .case{padding:32px;background:#172837;border-left:3px solid #ae865b}
+    .case .tag{font-size:.76rem;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;font-weight:750}
+    .case h3{font-size:1.35rem;margin:11px 0}
+    .case p{font-size:.94rem;margin-bottom:0}
+    .career{border-top:1px solid var(--line);margin-top:35px}
+    .career-row{display:grid;grid-template-columns:165px 1fr;gap:25px;padding:26px 0;border-bottom:1px solid var(--line)}
+    .career-row .era{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding-top:4px}
+    .career-row h3{margin:0 0 7px}
+    .career-row p{margin:0;font-size:.95rem}
+    .resources{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+    .resource{border:1px solid #3b5160;padding:26px;text-decoration:none;background:var(--surface)}
+    .resource:hover{border-color:var(--gold);background:#233747}
+    .resource b{display:block;margin:6px 0;font-size:1.03rem}
+    .resource small{color:var(--muted);display:block;line-height:1.5}
+    .arrow{color:var(--gold);font-size:1.4rem}
+    .connect{background:linear-gradient(130deg,#20394b,#0b1520)}
+    .connect p{max-width:700px;font-size:1.05rem}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#a5b6c1;font-size:.83rem}
+    .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .foot a{color:#d3e1e9}
+    :focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+    @media(max-width:900px){.hero-grid{gap:35px;grid-template-columns:1.2fr .9fr}.nav{align-items:flex-start;flex-direction:column;padding:17px 0}nav{gap:14px}.grid,.resources{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.container{width:min(100% - 36px,var(--max))}.hero{padding:48px 0 72px}.hero-grid,.two-col,.cases{grid-template-columns:1fr}.hero-grid{gap:35px}.photo-wrap{margin:0 auto;max-width:350px}.portrait{height:340px}.grid,.resources{grid-template-columns:1fr}.career-row{grid-template-columns:1fr;gap:6px}section{padding:69px 0}.nav-contact{padding:0;border:0}.quote-note{margin-left:0}.stats{gap:25px}h1{font-size:clamp(2.8rem,12vw,4.1rem)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  
+  .nav-work{color:var(--gold)}
+  .page-hero{padding:90px 0 65px;background:linear-gradient(145deg,#162d3f,#0b1520)}
+  .page-hero h1{font-size:clamp(2.6rem,5vw,4.6rem)}
+  .page-hero p{font-size:1.13rem;max-width:830px}
+  .crumb{color:#b6c6d2;font-size:.86rem;letter-spacing:.04em}
+  .crumb a{color:#f1d5b0}
+  .prose{max-width:830px}
+  .prose h2{font-size:clamp(1.85rem,3vw,2.65rem);margin:45px 0 16px}
+  .prose h3{margin-top:25px}
+  .prose ul{color:var(--muted);padding-left:23px}
+  .prose li{margin-bottom:10px}
+  .fact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:30px 0}
+  .fact{border:1px solid var(--line);background:var(--surface);padding:24px}
+  .fact strong{display:block;font-size:1.6rem;color:#f2d5b2;font-weight:750}
+  .fact span{color:var(--muted);font-size:.88rem}
+  .back-link{display:inline-block;color:#e8bc83;margin-top:36px}
+  .result-note{font-size:.82rem;border-top:1px solid var(--line);padding-top:22px;color:#adbfc9}
+  .case-link{display:inline-block;color:var(--gold);font-weight:750;text-decoration:none;margin-top:17px}
+  .case-link:hover{text-decoration:underline}
+  .resume-list{list-style:none;padding:0}
+  .resume-list li{padding-bottom:5px}
+  .resume-item{padding:18px 0 20px;border-bottom:1px solid var(--line)}
+  .resume-item h3{margin-bottom:6px}
+  .resume-meta{color:var(--gold);font-weight:650;font-size:.92rem}
+  .smallprint{font-size:.85rem;color:var(--muted)}
+  @media(max-width:700px){.fact-grid{grid-template-columns:1fr}.page-hero{padding:60px 0 40px}}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a><div class="nav-wrap"><div class="container nav"><a href="index.html" class="brand">KALE SCHULTE</a><nav aria-label="Primary navigation"><a href="index.html">Home</a><a href="work.html">Selected Work</a><a href="ai-systems.html">AI &amp; Systems</a><a href="robotics.html">Robotics</a><a href="operations.html">Operations</a><a class="nav-contact" href="resume.html">Résumé</a></nav></div></div>
+<main id="main"><section class="page-hero"><div class="container"><div class="crumb"><a href="index.html">Home</a> / <a href="work.html">Selected Work</a></div><div class="eyebrow">Selected work / AI transformation</div><h1>AI and Business Systems</h1><p>Building practical AI-enabled workflows that connect people, reporting and execution rather than treating AI as a standalone experiment.</p></div></section><section><div class="container"><div class="prose">
+<h2>The business challenge</h2><p>Operational information often lives in disconnected workflows, reports and conversations. Leaders need reliable visibility into tasks, resources, sales opportunities and execution without creating excessive administrative work for teams.</p>
+<h2>Understand the operation before you automate it</h2><p>Technology alone doesn't create a scalable operation. I start by mapping how people, resources, information and decisions move through the organization, including the exceptions and dependencies that are easy to miss. Automating a poorly understood workflow can amplify its problems. Understanding the system first lets me improve the process, define meaningful performance measures and deploy AI where it actually strengthens execution.</p>
+<h2>My role and approach</h2><p>At Visionary Fiber Technologies, I led AI-driven operational transformation and internal systems architecture across operations, reporting, sales support and executive visibility.</p>
+<ul><li>Mapped operational needs into task tracking, dashboarding and reporting workflows.</li><li>Architected an integrated AI-assisted operations environment using workflow automation and intelligent orchestration.</li><li>Developed AI agent-driven sales intelligence processes to structure market and company research for outreach.</li><li>Designed CRM-aligned information flows to improve pipeline and activity visibility.</li><li>Coordinated cross-functional adoption, governance, priorities and rollout planning with engineering, operations and leadership.</li></ul>
+<div class="fact-grid"><div class="fact"><strong>AI agents</strong><span>Sales-intelligence research and insight structuring</span></div><div class="fact"><strong>Dashboards</strong><span>Operational, workforce, productivity and sales reporting</span></div><div class="fact"><strong>Governance</strong><span>KPIs, prioritization and practical system adoption</span></div></div>
+<h2>What this demonstrates</h2><p>My emphasis is on the operating model around AI: what information enters a process, who needs to act on it, how exceptions are handled, and how leadership knows whether the workflow is helping. It is as much a change-management and systems-architecture challenge as a technology challenge.</p>
+<p class="result-note">Scope and examples reflect responsibilities described in my professional résumé. I have not published proprietary dashboards, internal data, or unverified savings percentages.</p>
+<a href="work.html" class="back-link">← Return to Selected Work</a></div></div></section></main><footer><div class="container foot"><span>© 2026 Kale Schulte · Austin, Texas</span><span><a href="https://www.linkedin.com/in/kaleschulte/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="resume.html">Résumé</a></span></div></footer></body></html>
